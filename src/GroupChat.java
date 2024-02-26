@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.net.DatagramPacket;
 import java.net.InetAddress;
 import java.net.MulticastSocket;
 import java.net.SocketException;
@@ -31,7 +32,7 @@ public class GroupChat {
 
 //                This class is used for sending and receiving multicast IP packets.
 //                It extends DatagramSocket class and provides additional functionality for joining groups.
-                MulticastSocket socket = new MulticastSocket(Integer.parseInt(args[1]));
+                MulticastSocket socket = new MulticastSocket(port);
 
 
 //                since deploying
@@ -57,8 +58,13 @@ public class GroupChat {
                         break;
                     }
                     message = name + ": " + message;
-                }
 
+//                    You could use a byte array to store a collection of binary data ( byte[] ), for example, the contents of a file
+                    byte[] buffer = message.getBytes();
+                    DatagramPacket datagram = new DatagramPacket(buffer, buffer.length, group, port);
+                    socket.send(datagram);
+//                    This class provides mechanisms for creation of datagram packets for connectionless delivery using datagram socket class.
+                }
 
             }
             catch (SocketException se) {
