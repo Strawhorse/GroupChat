@@ -9,3 +9,7 @@ java GroupChat 239.0.0.0 1234   (ip address and port, the two arguments taken in
 Then enter your name and begin chatting.
 
 A multicast host is specified by a class D IP address and by a standard UDP port number. Class D IP addresses are in the range 224.0.0.0 to 239.255.255.255, inclusive. The address 224.0.0.0 is reserved and should not be used.
+
+Thanks to this Stackoverflow thread about running threads using Runnable interface: https://stackoverflow.com/questions/13327571/in-a-simple-to-understand-explanation-what-is-runnable-in-java
+"A Runnable is basically a type of class (Runnable is an Interface) that can be put into a thread, describing what the thread is supposed to do."
+
