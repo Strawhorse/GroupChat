@@ -17,5 +17,7 @@ Also thanks to a great article on Medium: https://medium.com/@AlexanderObregon/i
 
 And to a good explanation of what datagrampackets are on geekforgeeks.com: https://www.geeksforgeeks.org/java-net-datagrampacket-class-java/
 
+Lastly, a great article at Baeldung: https://www.baeldung.com/java-broadcast-multicast
+
 Working running on 2 consoles
 ![image](https://github.com/Strawhorse/GroupChat/assets/47267071/7e8e5318-234c-45cd-9df4-94b177b84d03)

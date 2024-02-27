@@ -43,6 +43,16 @@ public class ReadThread implements Runnable{
 
                 if(!message.startsWith(GroupChat.name)) System.out.println(message);
 
+
+//                DELETE LATER: quick check to print off everything in the byte buffer
+                System.out.println("Now printing everything from the byte buffer:\n");
+
+                for (byte b : buffer) {
+                    System.out.print(b + " ");
+                }
+//                DELETE LATER: quick check to print off everything in the byte buffer
+
+
                 // Reset the length of the packet before the next packet is received
                 datagram.setLength(buffer.length);
 
