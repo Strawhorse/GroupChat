@@ -6,9 +6,9 @@ import java.nio.charset.StandardCharsets;
 
 public class ReadThread implements Runnable{
 
-    private MulticastSocket socket;
-    private InetAddress group;
-    private int port;
+    private final MulticastSocket socket;
+    private final InetAddress group;
+    private final int port;
 
 
     private static final int MAX_LEN = 1000;
