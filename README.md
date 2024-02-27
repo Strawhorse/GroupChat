@@ -13,5 +13,9 @@ A multicast host is specified by a class D IP address and by a standard UDP port
 Thanks to this Stackoverflow thread about running threads using Runnable interface: https://stackoverflow.com/questions/13327571/in-a-simple-to-understand-explanation-what-is-runnable-in-java
 "A Runnable is basically a type of class (Runnable is an Interface) that can be put into a thread, describing what the thread is supposed to do."
 
+Also thanks to a great article on Medium: https://medium.com/@AlexanderObregon/introduction-to-multicast-sockets-in-java-c276a897d8e8
+
+And to a good explanation of what datagrampackets are on geekforgeeks.com: https://www.geeksforgeeks.org/java-net-datagrampacket-class-java/
+
 Working running on 2 consoles
 ![image](https://github.com/Strawhorse/GroupChat/assets/47267071/7e8e5318-234c-45cd-9df4-94b177b84d03)
