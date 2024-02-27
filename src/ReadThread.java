@@ -34,6 +34,11 @@ public class ReadThread implements Runnable{
 
             try{
                 socket.receive(datagram);    // Receive packet from multicast group
+                socket.setSoTimeout(30000); // Timeout after 30 seconds
+
+//                When the receive method is called, it blocks until a packet is received.
+//                The data is then extracted from the DatagramPacket, and it can be processed as needed.
+
                 message = new String(buffer, 0, datagram.getLength(), "UTF-8");
 
                 if(!message.startsWith(GroupChat.name)) System.out.println(message);

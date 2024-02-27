@@ -1,8 +1,5 @@
 import java.io.IOException;
-import java.net.DatagramPacket;
-import java.net.InetAddress;
-import java.net.MulticastSocket;
-import java.net.SocketException;
+import java.net.*;
 import java.util.Scanner;
 
 public class GroupChat {
@@ -54,6 +51,7 @@ public class GroupChat {
                     if(message.equalsIgnoreCase(GroupChat.TERMINATE)){
                         finished = true;
                         socket.leaveGroup(group);
+
                         socket.close();
                         break;
                     }
